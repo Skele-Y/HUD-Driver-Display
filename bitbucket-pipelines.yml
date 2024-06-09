@@ -1,0 +1,18 @@
+options:
+  max-time: 15
+image: skelec/driver-displays-x-compile:latest
+
+pipelines:
+  pull-requests:
+    "**":
+      - step:
+          name: Build driver-displays ARM Binary
+          script:
+            - apt-get install zip
+            - /app/ARMqtinstall/bin/qt-cmake -B ddPiBuild .
+            - cd ddPiBuild
+            - cmake --build . --parallel $(nproc)
+            - cmake install .
+            - zip driver-displays.zip driver-displays config/config.json config/gradient.png config/SensorBus.dbc config/TractiveBus.dbc
+          artifacts: 
+            - ddPiBuild/driver-displays.zip

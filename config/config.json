@@ -1,0 +1,41 @@
+{
+    "connect" : true,
+    "usingPipe" : false,
+    "interfaces": [
+        {"socketcan": "can0"},
+        {"socketcan": "can1"}
+        ],
+    "dbcFiles": ["SensorBus.dbc","TractiveBus.dbc"],
+    "sensors" : {
+        "carSpeed": [1797,"WheelSpeedRR"],
+        "lastLap": [99999,"6004"],
+        "brakeIndicatorFR": [1681,"BrakeTempFR"],
+        "brakeIndicatorFL": [1681,"BrakeTempFL"],
+        "brakeIndicatorRR": [1796,"BrakeTempRR"],
+        "brakeIndicatorRL": [1796,"BrakeTempRL"],
+        "TyreIndicatorFR": [1682,"TyreTempFR8"],
+        "TyreIndicatorFL": [1683,"TyreTempFL8"],
+        "TyreIndicatorRR": [1696,"TyreTempRR8"],
+        "TyreIndicatorRL": [1697,"TyreTempRL8"],
+        "temperatureSoC": [1713,"High_Temperature"],
+        "StateOfCharge": [1714,"Adaptive_SOC"],
+        "rpmValue": [192,"Speed_Command"],
+        "powerMode": [99999,"3"],
+        "lcMode": [1803,"LaunchModeStatus"],
+        "lapDelta" : [99999,"6003"],
+        "GForce": [99999,"4"],
+        "regenStrength": [1803,"RegenActive"],
+        "torqueSetting": [1803,"PedalSensitivity"],
+        "ccActive": [1803,"CruiseControlActive"],
+        "dcl": [1713,"Pack_DCL"],
+        "lowVoltage": [1799,"BatteryVoltage"],
+        "hVlow": [1716,"Low_Cell_Voltage"],
+        "hVmed": [1716,"Avg_Cell_Voltage"],
+        "hVhigh": [1716,"High_Cell_Voltage"],
+        "temperatureInverter": [161,"D1_Control_Board_Temperature"],
+        "temperatureMotor": [162,"D3_Motor_Temperature"],
+        "coolantTempInverter":[1802,"CoolantTempInverter"],
+        "coolantTempFanOUT":[1802,"CoolantTempFanOUT"],
+        "coolantTempFanIN":[1802,"CoolantTempFanIN"]
+    }
+}

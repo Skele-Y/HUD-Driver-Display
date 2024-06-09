@@ -1,0 +1,27 @@
+{
+    "connect" : true,
+    "sensors" : {
+        "carSpeed": "19",
+        "lastLap": "6004",
+        "brakeIndicatorFR": "23",
+        "brakeIndicatorFL": "53",
+        "brakeIndicatorRR": "52",
+        "brakeIndicatorRL": "24",
+        "TyreIndicatorFR": "31",
+        "TyreIndicatorFL": "44",
+        "TyreIndicatorRR": "48",
+        "TyreIndicatorRL": "27",
+        "temperatureSoC": "33",
+        "StateOfCharge": "3",
+        "rpmValue": "136",
+        "powerMode": "3",
+        "regenMode": "6011",
+        "tcMode": "2",
+        "lapDelta" : "6003",
+        "GForce": "4",
+        "regenStrength": "1",
+        "torqueSetting": "2",
+        "throttleMode": "3",
+        "ccActive": "4"
+    }
+}

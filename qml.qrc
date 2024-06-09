@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>config.json</file>
+        <file alias="Laptime_rolling.qml">resources/modules/Laptime_rolling.qml</file>
+        <file alias="SoC.qml">resources/modules/SoC.qml</file>
+        <file alias="Laptime_best.qml">resources/modules/Laptime_best.qml</file>
+        <file alias="Laptime_delta.qml">resources/modules/Laptime_delta.qml</file>
+        <file alias="Laptime_last.qml">resources/modules/Laptime_last.qml</file>
+        <file alias="RPM_bar.qml">resources/modules/RPM_bar.qml</file>
+        <file alias="Temperature_bar.qml">resources/modules/Temperature_bar.qml</file>
+        <file alias="Launch_control_symbol.qml">resources/modules/Launch_control_symbol.qml</file>
+        <file alias="Power_regen_symbols.qml">resources/modules/Power_regen_symbols.qml</file>
+        <file alias="RPM_wrapper.qml">resources/modules/RPM_wrapper.qml</file>
+        <file alias="Speed.qml">resources/modules/Speed.qml</file>
+        <file>resources/images/Temperature Bar.png</file>
+        <file>resources/images/abs_off.png</file>
+        <file>resources/images/abs_on.png</file>
+        <file>resources/images/tc_off.png</file>
+        <file>resources/images/tc_on.png</file>
+        <file>resources/images/temp_off.png</file>
+        <file>resources/images/temp_on.png</file>
+        <file alias="Temperature_digital.qml">resources/modules/Temperature_digital.qml</file>
+        <file alias="Brake_indicators.qml">resources/modules/Brake_indicators.qml</file>
+    </qresource>
+</RCC>
