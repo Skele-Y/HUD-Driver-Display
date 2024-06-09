@@ -1,0 +1,76 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 1794 PDM_CAN_RX2: 6 Vector__XXX
+ SG_ SensorsCurrentSense : 24|8@1+ (0.1,0) [0|0] "Amps" Vector__XXX
+ SG_ SDC_Current_Sense : 0|8@1+ (0.1,0) [0|0] "Amps" Vector__XXX
+ SG_ LVBattCurrentSense : 32|16@1+ (0.1,0) [0|0] "Amps" Vector__XXX
+ SG_ InverterCurrentSense : 8|8@1+ (0.1,0) [0|0] "Amps" Vector__XXX
+ SG_ ECUCurrentSense : 16|8@1+ (0.1,0) [0|0] "Amps" Vector__XXX
+
+BO_ 1793 PDM_CAN_RX1: 6 Vector__XXX
+ SG_ SensorsInput : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ InverterInput : 42|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ECUInput : 41|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DeviceTrayInput : 43|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SensorsDiagnostics : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SDCDiagnostics : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pump2Diagnostics : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pump2CurrentSense : 16|8@1+ (0.1,0) [0|0] "Amps" Vector__XXX
+ SG_ Pump1Diagnostics : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pump1CurrentSense : 8|8@1+ (0.1,0) [0|0] "Amps" Vector__XXX
+ SG_ InverterDiagnostics : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ECUDiagnostics : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DeviceTrayDiagnostics : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DeviceTrayCurrentSense : 24|8@1+ (0.1,0) [0|0] "Amps" Vector__XXX
+ SG_ DAQDiagnostics : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DAQCurrentSense : 32|8@1+ (0.1,0) [0|0] "Amps" Vector__XXX
+
+BO_ 1792 PDM_CAN_TX: 1 Vector__XXX
+ SG_ SDCEnable : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pump2Enable : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Pump1Enable : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DAQEnable : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+
