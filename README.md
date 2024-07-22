@@ -1,16 +1,9 @@
 # QT Driver Displays
-
-[![forthebadge](https://forthebadge.com/images/featured/featured-built-with-love.svg)](https://forthebadge.com)
-
-[![forthebadge](https://forthebadge.com/images/badges/as-seen-on-tv.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/0-percent-optimized.svg)](https://forthebadge.com)
 
-[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
+This software is a HUD software for Bachelors thesis. It is a HUD interface forked from driver-displays for Redback Racing RB23.
 
-Driver Displays software for Redback Racing RB23.
-<p align="center">
-<img src="./resources/images/driver-displays_002.png" alt="GUI" width="200"/>
-</p>
 This project makes use of the Qt6 framework for GUI. The C++ backend parses CAN Data.
 
 ![backendimg](/resources/images/BackendDiagram.png)
@@ -157,9 +150,6 @@ Depending on which renderer you want to use, you can specify the platform. Curre
 The software is designed to run on Aaarch64 Ubuntu Server 20.4 on a Raspberry Pi 4. It is cross-compiled on an x86-64 Ubuntu 20.04 Machine.
 The Bitbucket Pipelines runner pulls a docker image of a cross-compiled Qt 6.5.0 ARM installation and uses it to compile the driver-displays binary.
 
-The GUI is intended to run at 800x480 in resolution, with a 90 degree display rotation. The UI is technically dynamically scalable but might need adjustments.
-It is built for the Riverdi RVT50HQTFWN00 5 inch display.
-
 # Testing
 
 ## Testing Values
@@ -218,7 +208,3 @@ The conditions of acceptance for a new feature are:
 - C++ code should follow the [C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Tab indenting and K&R brace placement
 - Qml should follow the [Qml Coding Conventions](https://doc-snapshots.qt.io/qt6-dev/qml-codingconventions.html)
 
-# I need more help
-
-Contact Shady Alwidyan (z5312611) for more information about driver displays.
-# HUD-Driver-Display
