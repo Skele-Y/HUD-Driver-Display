@@ -23,7 +23,7 @@ Rectangle {
               } else {
                   ('10' + floatTemp).slice(-2) + "°C"
               }
-        font.pixelSize: 80 * root.width/800
+        font.pixelSize: 80 * root.width/1024
         font.bold: true
         color: "white"
     }

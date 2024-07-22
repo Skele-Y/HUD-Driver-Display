@@ -2,7 +2,7 @@ import QtQuick 2.12
 
 //RPM_wrapper exists so that anchors ignore rotations in main.qml
 Item {
-    RPM_bar {
+    RPMBar {
         id: rpm_bar
         anchors.left: root.left
         x: 200

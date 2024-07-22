@@ -21,7 +21,7 @@ Rectangle {
               } else if (torque == 2){
                   "HIGH"
               }
-        font.pixelSize: 80 * root.width/800
+        font.pixelSize: 80 * root.width/1024
         font.bold: true
         color: "white"
     }

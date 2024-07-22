@@ -60,8 +60,8 @@ Item {
 
 
     Rectangle {
-        width: 105 * root.width/800
-        height: 105 * root.height/480
+        width: 105 * root.width/1024
+        height: 105 * root.height/600
         color: tempToColor(fl)
         id: fl_rect
         anchors {
@@ -81,8 +81,8 @@ Item {
         }
     }
     Rectangle {
-        width: 105 * root.width/800
-        height: 105 * root.height/480
+        width: 105 * root.width/1024
+        height: 105 * root.height/600
         color: tempToColor(fr)
         id: fr_rect
         anchors {
@@ -102,8 +102,8 @@ Item {
     }
 
     Rectangle {
-        width: 105 * root.width/800
-        height: 105 * root.height/480
+        width: 105 * root.width/1024
+        height: 105 * root.height/600
         color: tempToColor(rl)
         id: rl_rect
         anchors {
@@ -124,8 +124,8 @@ Item {
     }
 
     Rectangle {
-        width: 105 * root.width/800
-        height: 105 * root.height/480
+        width: 105 * root.width/1024
+        height: 105 * root.height/600
         color: tempToColor(rr)
         id: rr_rect
         anchors {

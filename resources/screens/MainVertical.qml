@@ -42,7 +42,7 @@ Item {
                 horizontalCenter: parent.horizontalCenter
             }
             width: parent.width
-            y: 180 * root.height/480
+            y: 180 * root.height/600
 
         }
 
@@ -51,8 +51,8 @@ Item {
                 horizontalCenter: parent.horizontalCenter
                 horizontalCenterOffset: -20 * root.width/480
             }
-            x: 178 * root.width/800
-            y: 692 * root.height/480
+            x: 178 * root.width/1024
+            y: 692 * root.height/600
         }
 
         LaunchControlSymbol {

@@ -12,13 +12,13 @@ Item {
 
     StackView {
         id: stackView
-        initialItem: mainVertical
+        initialItem: mainWide
         anchors.fill: parent
         }
 
     Component {
-        id: mainVertical
-        TestVertical {
+        id: mainWide
+        MainWide {
             anchors.fill: parent
 //            Button {
 //                text: "test button"

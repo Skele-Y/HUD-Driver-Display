@@ -31,7 +31,7 @@ Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
         y: 8
         text: amps + "A"
-        font.pixelSize: 80 * root.width/800
+        font.pixelSize: 80 * root.width/1024
         font.bold: true
         color: "white"
     }

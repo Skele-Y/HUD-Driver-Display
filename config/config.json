@@ -2,8 +2,8 @@
     "connect" : true,
     "usingPipe" : false,
     "interfaces": [
-        {"socketcan": "can0"},
-        {"socketcan": "can1"}
+        {"socketcan": "vcan0"},
+        {"socketcan": "vcan1"}
         ],
     "dbcFiles": ["SensorBus.dbc","TractiveBus.dbc"],
     "sensors" : {
@@ -18,7 +18,7 @@
         "TyreIndicatorRR": [1696,"TyreTempRR8"],
         "TyreIndicatorRL": [1697,"TyreTempRL8"],
         "temperatureSoC": [1713,"High_Temperature"],
-        "StateOfCharge": [1714,"Adaptive_SOC"],
+        "StateOfCharge": [1715,"Adaptive_SOC"],
         "rpmValue": [192,"Speed_Command"],
         "powerMode": [99999,"3"],
         "lcMode": [1803,"LaunchModeStatus"],

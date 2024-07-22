@@ -34,6 +34,6 @@ int main(int argc, char *argv[])
     QFontDatabase::addApplicationFont("qrc:/resources/Roboto-Light.ttf");
 
     view.show();
-    view.setMinimumSize(QSize(480, 800));
+    view.setMinimumSize(QSize(1024, 600));
     return app.exec();
 }

@@ -13,9 +13,9 @@ Rectangle {
     Text {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.margins: 20
-        y: 6*root.width/800
+        y: 6*root.width/1024
         text: voltage + "V"
-        font.pixelSize: 75 * root.width/800
+        font.pixelSize: 75 * root.width/1024
         font.bold: true
         color: "white"
     }

@@ -4,8 +4,8 @@ Item {
     property real powermodefloat: sensors.powerMode.toFixed(0)
     property real regenmodefloat: sensors.regenMode.toFixed(0)
     Rectangle {
-        width: 210 * root.width/800
-        height: 60 * root.height/480
+        width: 210 * root.width/1024
+        height: 60 * root.height/600
         color: "Transparent"
         border.color: "White"
         border.width: 1
@@ -13,8 +13,8 @@ Item {
 
     Text {
         id: pmodetext
-        x: 5 * root.width/800
-        y: 6 * root.height/480
+        x: 5 * root.width/1024
+        y: 6 * root.height/600
         color: "#FFFFFF"
         font.pixelSize: 12 * (root.height / 480)
         font.styleName: "Bold"
@@ -24,7 +24,7 @@ Item {
     Text {
         id: rmodetext
         x: 110 * root.width / 800
-        y: 6 * root.height/480
+        y: 6 * root.height/600
         color: "#FFFFFF"
         font.pixelSize: 12 * (root.height / 480)
         font.styleName: "Bold"

@@ -42,7 +42,7 @@ Item {
                 horizontalCenter: parent.horizontalCenter
             }
             width: parent.width
-            y: 220 * root.height/480
+            y: 220 * root.height/600
         }
 
         InfoBar {
