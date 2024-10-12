@@ -16,13 +16,6 @@ Item {
         anchors.fill: parent
         color: "#000000"
 
-
-        RPMWrapper {
-            id: rpm_wrapper
-            visible: true
-            x: 400 * root.width/1024
-        }
-
         Speed {
             id: speed_indicator
             anchors {
@@ -31,20 +24,7 @@ Item {
             y: 90 * root.height/600
         }
 
-//        StateOfCharge {
-//           x: 18 * root.width/1024
-//           y: 435 * root.height/600
-//        }
-        Text {
-            id: battery_text
-            x: 50 * root.width/1024
-            y: 448 * root.height/600
-            color: "#cbcbcb"
-            text: "BATTERY"
-            font.pixelSize: 20/480 * root.height
-            textFormat: Text.RichText
-            font.family: "Roboto"
-        }
+
         LaptimeDelta {
             anchors {
                 horizontalCenter: parent.horizontalCenter

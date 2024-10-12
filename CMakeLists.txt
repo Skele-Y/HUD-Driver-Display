@@ -116,7 +116,6 @@ target_link_libraries(driver-displays PRIVATE
     Qt::Gui
     Qt::Quick
     Qt6::SerialBus
-    pigpio
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
