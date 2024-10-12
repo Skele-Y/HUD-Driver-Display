@@ -50,7 +50,7 @@ Item {
                 horizontalCenter: parent.horizontalCenter
             }
             width: parent.width
-            y: 500 * root.height/600
+            y: 200 * root.height/600
 
         }
         LaptimeLast {
