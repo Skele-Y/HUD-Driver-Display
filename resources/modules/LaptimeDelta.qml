@@ -4,9 +4,10 @@ import QtQuick.Layouts 1.0
 
 Rectangle {
     id: laptime_delta
-    implicitWidth: root.width
-    height: 60 * root.height/800
+    width:  204 * root.width/1024
+    height: 41 * root.height/600
     color: "transparent"
+    radius: 2
 
     property real floatSeconds_delta: sensors.lapDelta.toFixed(3)
     property real minutes_delta : Math.floor(floatSeconds_delta / 60)
@@ -31,7 +32,7 @@ Rectangle {
         font.italic: false
         font.bold: true
         font.letterSpacing: 0
-        font.pixelSize: 50
+        font.pixelSize: 30
         font.weight: Font.Bold
         horizontalAlignment: root.AlignHCenter
     }

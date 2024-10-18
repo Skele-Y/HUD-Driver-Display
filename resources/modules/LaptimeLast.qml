@@ -1,8 +1,8 @@
 import QtQuick 2.12
 
 Rectangle {
-    width: parent.width * 0.35
-    height: parent.height * 0.35
+    width: parent.width * 0.177
+    height: parent.height * 0.177
     color: "transparent"
     id: last_laptime
 
@@ -25,7 +25,7 @@ Rectangle {
         }
 
         color: "#FFFFFF"
-        font.pixelSize: 90 * (root.height / 800)
+        font.pixelSize: 64 * (root.height / 600)
         font.styleName: "Normal"
         font.weight: Font.Bold
         font.family: "Arial"

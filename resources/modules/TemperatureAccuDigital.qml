@@ -4,35 +4,38 @@ Rectangle {
     id: temperature_digital
     property real floatTemp: sensors.temperatureSoC.toFixed(0)
     property bool isRed: false
-    width: root.width/3
-    height: 100 * root.height/800
+    width: 140
+    height: 67 * root.height/600
     color: if (floatTemp > 53) {
                "red"
-          } else if (floatTemp >= 0 || floatTemp <= 100) {
+            } else if (floatTemp >= 40 || floatTemp <= 53) {
+                "orange"
+            } else if (floatTemp >= 0 || floatTemp < 40) {
               "transparent"
           }
     border {
         color: "white"
+        width: 3
     }
+    radius: 3
 
     Text {
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.margins: 20
-        y: 8
         text: if (floatTemp >= 100 || floatTemp < 0) {
               } else {
                   ('10' + floatTemp).slice(-2) + "°C"
               }
-        font.pixelSize: 80 * root.width/1024
+
+        font.pixelSize: 40 * root.width/1024
         font.bold: true
         color: "white"
     }
 
     Text {
         anchors.horizontalCenter: parent.horizontalCenter
-        y: 65 * root.height/800
-        text: "ACCU. TEMP"
-        font.pixelSize: 13 * root.width/400
+        y: (120-84) * root.height/600
+        text: "Accu."
+        font.pixelSize: 20 * root.width/1024
         font.bold: true
         color: "white"
     }

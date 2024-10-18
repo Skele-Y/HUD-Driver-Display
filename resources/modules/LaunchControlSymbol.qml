@@ -4,8 +4,8 @@ Item {
     id: launchcontrol
     width: lc
     transformOrigin: width/2
-    property real imgWidth: root.width*0.3/480
-    property real imgHeight: root.height*0.3/800
+    property real imgWidth: root.width*0.2/1024
+    property real imgHeight: root.height*0.2/600
     property real lcActive: sensors.lcMode.toFixed(0)
 
     Image {

@@ -14,31 +14,69 @@ Item {
         id: background_colour
         visible: true
         anchors.fill: parent
-        color: "#000000"
+        color: "black"
 
-        Speed {
-            id: speed_indicator
-            anchors {
-                horizontalCenter: parent.horizontalCenter
+
+        Rectangle {
+            id: critical_area
+            visible: true
+            color: "transparent"
+            border.width: 75
+            border.color: "red"
+            anchors.fill: parent
+            Rectangle {
+                x:73
+                y:71
+                height:297
+                width:193
+                color: "red"
             }
-            y: 90 * root.height/600
+            Rectangle {
+                x:73
+                y:354
+                height:182
+                width:648
+                color: "red"
+            }
+            Rectangle {
+                x:721
+                y:71
+                height:458
+                width:273
+                color: "red"
+            }
+
         }
 
+        LaunchControlSymbol {
+            x: 310 * root.width/1024
+            y: 285 * root.height/600
+        }
+
+        CruiseControlSymbol {
+            x: 640 * root.width/1024
+            y: 270 * root.height/600
+        }
+
+        TemperatureAccuDigital {
+            x: 275 * root.width/1024
+            y: 84 * root.height/600
+        }
+
+        TorqueSetting {
+            x: 575 * root.width/1024
+            y: 84 * root.height/600
+        }
 
         LaptimeDelta {
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-            }
-            width: parent.width
-            y: 200 * root.height/600
+            x: 400
+            y: 298 * root.height/600
 
         }
         LaptimeLast {
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-            }
             z: 1
-            y: 450 * root.height/800
+            y: 170 * root.height/600
+            anchors.horizontalCenter: parent.horizontalCenter
             color: "transparent"
         }
     }
