@@ -39,6 +39,24 @@ VAL_TABLE_ PedalSensitivity 2 "Throttle HIGH" 1 "Throttle MID" 0 "Throttle LOW" 
 VAL_TABLE_ LaunchModeStatus 3 "Launch ACTIVE" 2 "Launch READY" 1 "Launch INACTIVE" 0 "Launch FAILED" ;
 
 
+BO_ 1810 PDM_BoardStates: 2 Vector__XXX
+ SG_ Board8Ch2_On : 15|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board7Ch2_On : 14|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board6Ch2_On : 13|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board5Ch2_On : 12|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board4Ch2_On : 11|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board3Ch2_On : 10|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board2Ch2_On : 9|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board1Ch2_On : 8|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board8Ch1_On : 7|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board7Ch1_On : 6|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board6Ch1_On : 5|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board5Ch1_On : 4|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board4Ch1_On : 3|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board3Ch1_On : 2|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board2Ch1_On : 1|1@1- (1,0) [0|0] "" Vector__XXX
+ SG_ Board1Ch1_On : 0|1@1- (1,0) [0|0] "" Vector__XXX
+
 BO_ 290 RearIMU_gyros: 8 Vector__XXX
  SG_ RearIMUYaw : 31|16@0- (0.01,0) [0|0] "Deg/s" Vector__XXX
  SG_ RearIMURoll : 15|16@0- (0.01,0) [0|0] "Deg/s" Vector__XXX
@@ -162,6 +180,31 @@ BO_ 1681 CANNODE_BrakeTemps: 4 Vector__XXX
 BO_ 1680 CANNODE_DamperPots: 4 Vector__XXX
  SG_ DamperPotFR : 23|16@0+ (0.01,0) [0|5] "Volts" Vector__XXX
  SG_ DamperPotFL : 7|16@0+ (0.01,0) [0|5] "Volts" Vector__XXX
+
+BO_ 162 M162_Temperature_Set_3: 8 INV
+ SG_ D4_Torque_Shudder : 48|16@1- (0.1,0) [-3276.8|3276.7] "Nm" Vector__XXX
+ SG_ D3_Motor_Temperature : 32|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ D2_RTD5_Temperature : 16|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ D1_RTD4_Temperature : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+
+BO_ 1716 MSGID_0x6B4: 8 Vector__XXX
+ SG_ Low_Cell_Voltage : 55|16@0+ (0.0001,0) [0|0] "V" Vector__XXX
+ SG_ Low_Cell_Voltage_ID : 47|8@0+ (1,1720) [0|0] "ID" Vector__XXX
+ SG_ High_Cell_Voltage : 31|16@0+ (0.0001,0) [0|0] "V" Vector__XXX
+ SG_ High_Cell_Voltage_ID : 23|8@0+ (1,0) [0|0] "ID" Vector__XXX
+ SG_ Avg_Cell_Voltage : 7|16@0+ (0.0001,0) [0|0] "V" Vector__XXX
+
+BO_ 161 M161_Temperature_Set_2: 8 INV
+ SG_ D4_RTD3_Temperature : 48|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ D3_RTD2_Temperature : 32|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ D2_RTD1_Temperature : 16|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+ SG_ D1_Control_Board_Temperature : 0|16@1- (0.1,0) [-3276.8|3276.7] "degC" Vector__XXX
+
+BO_ 1713 MSGID_0X6B1: 8 BMS
+ SG_ Pack_DCL : 7|16@0+ (1,0) [0|0] "A"  Third_Party_Device
+ SG_ Pack_CCL : 23|16@0+ (1,0) [0|0] "Amp"  Third_Party_Device
+ SG_ High_Temperature : 39|8@0+ (1,0) [0|0] "Celsius"  Third_Party_Device
+ SG_ Low_Temperature : 47|8@0+ (1,0) [0|0] "Celsius"  Third_Party_Device
 
 
 
