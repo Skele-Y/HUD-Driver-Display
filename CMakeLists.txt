@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(driver-displays VERSION 1.0 LANGUAGES CXX)
+project(hud-driver-displays VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -33,20 +33,28 @@ set(DBC2_FILE_NAME "TractiveBus.dbc")
 set(DBC2_DIR ${CMAKE_CURRENT_SOURCE_DIR}/config/${DBC2_FILE_NAME})
 configure_file(${DBC2_DIR} ${CMAKE_BINARY_DIR}/config/${DBC2_FILE_NAME} COPYONLY)
 
-qt_add_executable(driver-displays WIN32 MACOSX_BUNDLE
+qt_add_executable(hud-driver-displays WIN32 MACOSX_BUNDLE
     main.cpp
     resources/backend.h resources/backend.cpp 
     resources/colourmap.h resources/colourmap.cpp
     resources/logformatter.h resources/logformatter.cpp
 )
 
-qt_add_resources(driver-displays "imageresources"
+qt_add_resources(hud-driver-displays "imageresources"
     PREFIX "/resources/images"
     FILES
         ./resources/images/gradient.png
 )
 
-qt_add_qml_module(driver-displays
+qt_add_resources(hud-driver-displays "imageresources"
+    PREFIX "/config"
+    FILES
+        ./config/config.json
+        ./config/SensorBus.dbc
+        ./config/TractiveBus.dbc
+)
+
+qt_add_qml_module(hud-driver-displays
     URI test
     VERSION 1.0
     QML_FILES
@@ -111,7 +119,7 @@ qt_add_qml_module(driver-displays
     QML_FILES resources/modules/TemperatureAllCoolants.qml
 )
 
-target_link_libraries(driver-displays PRIVATE
+target_link_libraries(hud-driver-displays PRIVATE
     Qt::Core
     Qt::Gui
     Qt::Quick
@@ -120,13 +128,13 @@ target_link_libraries(driver-displays PRIVATE
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-install(TARGETS driver-displays
+install(TARGETS hud-driver-displays
     BUNDLE DESTINATION .
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 qt_generate_deploy_qml_app_script(
-    TARGET driver-displays
+    TARGET hud-driver-displays
     OUTPUT_SCRIPT deploy_script
     NO_UNSUPPORTED_PLATFORM_ERROR
     DEPLOY_USER_QML_MODULES_ON_UNSUPPORTED_PLATFORM

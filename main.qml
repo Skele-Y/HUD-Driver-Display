@@ -9,6 +9,7 @@ Item {
     width: parent.width
     height: parent.height
     visible: true
+    transform: Rotation { origin.x: root.width/2; origin.y: root.height/2; angle: 180}
 
     StackView {
         id: stackView
