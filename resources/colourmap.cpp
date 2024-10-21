@@ -18,7 +18,7 @@ void ColourMap::readImage() {
 
 
         QString url;
-        url = "config/gradient.png";
+        url = ":/resources/images/gradient.png";
 
         QImage gradientImg;
         if (!gradientImg.load(url)) {

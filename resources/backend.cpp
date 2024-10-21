@@ -185,7 +185,7 @@ void Backend::openUnixSocket() {
 }
 
 void Backend::processConfig() {
-    QFile file("qrc:/config/config.json");
+    QFile file(":/config/config.json");
     if(!file.open(QFile::ReadOnly)) {
         qCritical() << "Cannot open config file";
         return;
