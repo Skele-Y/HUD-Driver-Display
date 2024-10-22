@@ -36,6 +36,7 @@
         "temperatureMotor": [162,"D3_Motor_Temperature"],
         "coolantTempInverter":[1802,"CoolantTempInverter"],
         "coolantTempFanOUT":[1802,"CoolantTempFanOUT"],
-        "coolantTempFanIN":[1802,"CoolantTempFanIN"]
+        "coolantTempFanIN":[1802,"CoolantTempFanIN"],
+        "Test1BigColor":[1813,"Test1BigColor"]
     }
 }

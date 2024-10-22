@@ -6,8 +6,6 @@ import "../modules/"
 
 Item {
     id: root
-    width: parent.width
-    height: parent.height
     visible: true
 
     Rectangle {
@@ -22,28 +20,28 @@ Item {
             visible: true
             color: "transparent"
             border.width: 75
-            border.color: "red"
+            border.color: "black"
             anchors.fill: parent
             Rectangle {
                 x:73
                 y:71
                 height:297
                 width:193
-                color: "red"
+                color: "black"
             }
             Rectangle {
                 x:73
                 y:354
                 height:182
                 width:648
-                color: "red"
+                color: "black"
             }
             Rectangle {
                 x:721
                 y:71
                 height:458
                 width:273
-                color: "red"
+                color: "black"
             }
 
         }
@@ -78,6 +76,14 @@ Item {
             y: 170 * root.height/600
             anchors.horizontalCenter: parent.horizontalCenter
             color: "transparent"
+        }
+
+        TestHUDs {
+            width: 457
+            height: 279
+            x: 266 * root.width/1024
+            y: 75 * root.height/600
+            z:30
         }
     }
 }

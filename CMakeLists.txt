@@ -106,6 +106,8 @@ qt_add_qml_module(hud-driver-displays
         resources/images/cruise_control_on.png
         resources/images/cruise_control_off.png
         resources/images/white_arrow.png
+        resources/images/RightArrow.png
+        resources/images/LeftArrow.png
     NO_RESOURCE_TARGET_PATH
     QML_FILES
     QML_FILES resources/screens/TestVertical.qml
@@ -117,6 +119,8 @@ qt_add_qml_module(hud-driver-displays
     QML_FILES resources/modules/DCL.qml
     QML_FILES resources/modules/WarningLVBattery.qml
     QML_FILES resources/modules/TemperatureAllCoolants.qml
+    QML_FILES resources/modules/TestHUDs.qml
+    RESOURCES resources/images/LeftArrow.png resources/images/RightArrow.png
 )
 
 target_link_libraries(hud-driver-displays PRIVATE
